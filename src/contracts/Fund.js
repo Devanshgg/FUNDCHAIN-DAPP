@@ -1,0 +1,135 @@
+// Fund.sol ABI - generated from Remix IDE
+export const FUND_ABI = [
+  {
+    inputs: [
+      { internalType: "uint256", name: "_target", type: "uint256" },
+      { internalType: "uint256", name: "_deadline", type: "uint256" },
+    ],
+    stateMutability: "nonpayable",
+    type: "constructor",
+  },
+  {
+    inputs: [{ internalType: "address", name: "", type: "address" }],
+    name: "contributors",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "manager",
+    outputs: [{ internalType: "address", name: "", type: "address" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "minContribution",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "deadline",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "target",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "raiseAmount",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "noOfContributors",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "numRequest",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    name: "requests",
+    outputs: [
+      { internalType: "string", name: "description", type: "string" },
+      { internalType: "uint256", name: "value", type: "uint256" },
+      { internalType: "address payable", name: "recipient", type: "address" },
+      { internalType: "bool", name: "completed", type: "bool" },
+      { internalType: "uint256", name: "noOfVoters", type: "uint256" },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "sendEth",
+    outputs: [],
+    stateMutability: "payable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "checkBalance",
+    outputs: [{ internalType: "uint256", name: "", type: "uint256" }],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "refund",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      { internalType: "string", name: "_description", type: "string" },
+      { internalType: "uint256", name: "_value", type: "uint256" },
+      { internalType: "address payable", name: "_recipient", type: "address" },
+    ],
+    name: "createRequest",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_requestId", type: "uint256" }],
+    name: "voteRequest",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [{ internalType: "uint256", name: "_requestId", type: "uint256" }],
+    name: "makePayment",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+];
+
+// Network configurations
+export const NETWORKS = {
+  1: { name: "Ethereum Mainnet", color: "#627EEA", explorer: "https://etherscan.io" },
+  11155111: { name: "Sepolia Testnet", color: "#CFB5F0", explorer: "https://sepolia.etherscan.io" },
+  5: { name: "Goerli Testnet", color: "#3099f2", explorer: "https://goerli.etherscan.io" },
+  137: { name: "Polygon Mainnet", color: "#8247e5", explorer: "https://polygonscan.com" },
+  80001: { name: "Mumbai Testnet", color: "#8247e5", explorer: "https://mumbai.polygonscan.com" },
+};
