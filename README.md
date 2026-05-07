@@ -7,7 +7,7 @@ A full decentralized crowdfunding application built on Ethereum, powered by Reac
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js 16+ 
+- Node.js 16+
 - MetaMask browser extension
 - A deployed `Fund.sol` contract (deploy via Remix IDE)
 
@@ -121,3 +121,4 @@ npm run build
 - The `makePayment()` function requires: target reached + majority votes
 - Refunds only available after deadline if target not met
 - Manager is the address that deployed the contract
+
